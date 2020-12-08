@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+//Index / Active Tasks
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./alert/alert.css">
+        <title>Lista de Tareas</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark menuBar">
+            <a class="navbar-brand" href="#">ToDoList</a>
+            <a class="navbar-brand" href="https://github.com/ernemogilevich" target="_blank" id="github">Erne Mogilevich</a> 
+        </nav>
+
+        <div class="container">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link active" href="#">Activas</a>
+                <a class="nav-item nav-link" href="./done.html">Finalizadas</a>
+            </nav>
+            <div class="input-group mb-3 content">
+                <input type="text" class="form-control" placeholder="Add the task here" aria-label="Add the task here" aria-describedby="button-addon2" id="inputTask">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" type="button" id="addTask"><i class="fas fa-plus-circle"></i>Add</button>
+                    <button class="btn btn-outline-success" type="button" id="editTask"><i class="fas fa-edit"></i>Edit</button>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert" id="errorMessage"></div>
+            <ul class="list-group" id="contentTask"></ul>
+        </div>
+
+        <script src="./alert/alert.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
