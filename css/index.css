@@ -1,0 +1,27 @@
+.menuBar {
+    color: white;
+    font-size: 30px;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+li {
+    background-color: lightgrey !important;
+}
+
+.taskList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#github {
+    margin-right: 0px;
+}
